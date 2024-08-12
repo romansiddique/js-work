@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Bubble</title>
+</head>
+<body>
+    <div id="container">
+        <h1>MY List</h1>
+        <ul id="all-items">
+            <li id="items-1">item-1</li>
+            <li class="items">item-2</li>
+            <li class="items">item-3</li>
+            <li class="items">item-4</li>
+            <li class="items">item-5</li>
+        </ul>
+    </div>
+    
+    <script>
+        function helloMan(){
+            console.log("hello word");
+            document.getElementById('items-1').innerHTML = 'it is ok';
+            document.body.style.backgroundColor = 'yellow';
+        };
+        document.getElementById('items-1').addEventListener('click', helloMan);
+
+
+        document.getElementById('container').addEventListener('click', function(){
+            console.log('hello man');
+            document.body.style.backgroundColor = 'red'
+        });
+    </script>
+</body>
+</html>
