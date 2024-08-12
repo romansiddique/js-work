@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Lisner</title>
+</head>
+<body>
+    <div id="container">
+        <h1>My Even</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed consequuntur veritatis saepe facere debitis quibusdam.</p>
+        <p>A voluptatem, ipsum nostrum veritatis saepe laborum quis necessitatibus neque temporibus autem provident dicta molestiae!</p>
+        <p>Nobis voluptate voluptatem labore commodi autem sed sapiente animi enim, veniam nostrum deserunt ex nam?</p>
+
+        <button  id="first">Click ME! 1</button>
+        <button   id="second">Click ME! 2</button>
+        <button id="third">Click ME! 3</button>
+        <button id="fourth">Click ME! 4</button>
+    </div>
+
+    <script>
+    //    var firstButton = document.getElementById('first');
+    //    firstButton.onclick = function(){
+    //     console.log("it is okk")
+    //    }
+
+
+    // function workFor1(){
+    //         console.log("it is okkk")
+    //     }
+    //     var firstButton = document.getElementById('first');
+    //     firstButton.onclick = workFor1;
+
+
+    // document.getElementById('first').onclick = function(){
+    //     console.log("my iss ")
+    // }
+
+
+    function handleClick(a, b){
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
+        console.log(a + b);
+    }
+    // handleClick(2, 3);//body will no be work
+
+    //document.getElementById('first').onclick = handleClick;
+
+    document.getElementById('first').addEventListener('click', handleClick)
+
+    function handleClick2(){
+        document.body.style.backgroundColor = 'tomato';
+        document.body.style.color = 'black';
+    };
+    document.getElementById('second').addEventListener('click', handleClick2)
+
+    document.getElementById('third').addEventListener('click', function(){
+        document.body.style.backgroundColor = 'yellow';
+        document.body.style.color = 'blue';
+    })
+
+    document.getElementById('fourth').addEventListener('click', function(){
+        document.body.style.backgroundColor = 'cyan';
+        document.body.style.color = 'black';
+    })
+    </script>
+</body>
+</html>
